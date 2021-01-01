@@ -52,13 +52,7 @@ s.insert(원소 값);  // 자동으로 정렬해서 삽입되는 멤버 함수
 * default 정렬 기준은 <b>오름차순</b>
 * iterator가 자동으로 inorder traversal 순서대로 출력가능
 <p align='center'>
-<img src='https://g.gravizo.com/svg?
- digraph G {
-   4 -> 2 -> 1;
-   2 -> 3;
-   4 -> 6 -> 5;
-   6 -> 7;
- }
+<img src='https://user-images.githubusercontent.com/22142225/103436483-0be39380-4c5f-11eb-90b1-a315ad05c8bc.png
 '/>
 </p>
 <p align='end' style='color:#eee'><em>
