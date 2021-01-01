@@ -1,4 +1,4 @@
-# 코딩테스트 준비기록
+<h1 align="center"> <a href="https://programmers.co.kr/learn/challenges">프로그래머스</a> 코딩테스트 준비기록 </h1>
 
 ### stack의 사용
 
