@@ -21,7 +21,10 @@ int solution(vector<vector<int> > board, vector<int> moves) {
 * stack(스택)을 이용해서 불필요하게 ~~vector\<int>~~ 을 사용할 필요가 없다.
 * s.top()을 통해서 바로 top에 접근할 수 있다.
 
-<p align='end' style='color:lightgrey'><em>- 2021/01/01 크레인인형뽑기게임</em></p>
+<p align='end' style='color:lightgrey'><em>
+<a href="https://github.com/seunghwanly/CODING-TEST/blob/main/%ED%81%AC%EB%A0%88%EC%9D%B8%EC%9D%B8%ED%98%95%EB%BD%91%EA%B8%B0%EA%B2%8C%EC%9E%84/solution.md">
+- 2021/01/01 크레인인형뽑기게임</a>
+</em></p>
 
 ### set 의 사용
 ```c++
@@ -58,4 +61,6 @@ s.insert(원소 값);  // 자동으로 정렬해서 삽입되는 멤버 함수
  }
 '/>
 </p>
-<p align='end' style='color:#eee'><em>- 2021/01/01 두개뽑아서더하기</em></p>
+<p align='end' style='color:#eee'><em>
+<a href="https://github.com/seunghwanly/CODING-TEST/blob/main/%EB%91%90%EA%B0%9C%EB%BD%91%EC%95%84%EC%84%9C%EB%8D%94%ED%95%98%EA%B8%B0/solution.md">
+- 2021/01/01 두개뽑아서더하기</a></em></p>
