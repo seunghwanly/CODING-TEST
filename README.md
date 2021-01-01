@@ -22,3 +22,40 @@ int solution(vector<vector<int> > board, vector<int> moves) {
 * s.top()을 통해서 바로 top에 접근할 수 있다.
 
 <p align='end' style='color:lightgrey'><em>- 2021/01/01 크레인인형뽑기게임</em></p>
+
+### set 의 사용
+```c++
+#include <set>
+
+using namespace std;
+
+// 생성자
+set<int> s;
+set<int> s(pred);   // pred를 통해 정렬기준을 설정
+
+// set 멤버 함수
+s.begin();
+s.end();
+s.rbegin(); s.rend();   // 역으로 작업할 때 
+s.clear();
+s.count(원소 값); // set에서는 무조건 0 이거나 1 : 중복X 이진트리 이기 때문
+s.insert(원소 값);  // 자동으로 정렬해서 삽입되는 멤버 함수
+...
+```
+* 연관 컨테이너(associative container) 중 하나
+* <b>노드 기반 컨테이너</b>이며 "균형 이진트리"로 구현
+* 원소들의 값은 <b>중복 허용 X</b>
+* <b>insert</b> 멤버 함수에 의해서 자동으로 정렬.
+* default 정렬 기준은 <b>오름차순</b>
+* iterator가 자동으로 inorder traversal 순서대로 출력가능
+<p align='center'>
+<img src='https://g.gravizo.com/svg?
+ digraph G {
+   4 -> 2 -> 1;
+   2 -> 3;
+   4 -> 6 -> 5;
+   6 -> 7;
+ }
+'/>
+</p>
+<p align='end' style='color:#eee'><em>- 2021/01/01 두개뽑아서더하기</em></p>
