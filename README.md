@@ -77,5 +77,5 @@ using namespace std;
 - 평균 시간복잡도는 <em><b>nlogn</b></em>
 
 <p align='end' style='color:#eee'><em>
-<a href="https://github.com/seunghwanly/CODING-TEST/blob/main/%EB%91%90%EA%B0%9C%EB%BD%91%EC%95%84%EC%84%9C%EB%8D%94%ED%95%98%EA%B8%B0/solution.md">
+<a href="https://github.com/seunghwanly/CODING-TEST/blob/main/LEVEL1/%EC%99%84%EC%A3%BC%ED%95%98%EC%A7%80%EB%AA%BB%ED%95%9C%EC%84%A0%EC%88%98/solution.md">
 - 2021/01/02 완주하지못한선수</a></em></p>
