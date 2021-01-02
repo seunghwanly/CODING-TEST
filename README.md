@@ -58,3 +58,24 @@ s.insert(원소 값);  // 자동으로 정렬해서 삽입되는 멤버 함수
 <p align='end' style='color:#eee'><em>
 <a href="https://github.com/seunghwanly/CODING-TEST/blob/main/%EB%91%90%EA%B0%9C%EB%BD%91%EC%95%84%EC%84%9C%EB%8D%94%ED%95%98%EA%B8%B0/solution.md">
 - 2021/01/01 두개뽑아서더하기</a></em></p>
+
+### 시간복잡도를 줄이기
+* <b>완주하지 못한 선수</b> 문제는 정확도 테스트는 통과했지만 효율성 테스트에서 통과하지못해서 코드를 수정했던 문제이다. 
+* 기존 코드 시간복잡도 : O(n^2) | 수정한 코드 시간 복잡도 : O(nlogn)
+
+```c++
+#include <algorithm>
+
+using namespace std;
+...
+    sort(participant.begin(), participant.end());
+    sort(completion.begin(), completion.end());
+...
+```
+### void sort(T start, T end)
+- sort 알고리즘은 <em><b>퀵 정렬(quick sort)</b></em>를 기반으로 구현 
+- 평균 시간복잡도는 <em><b>nlogn</b></em>
+
+<p align='end' style='color:#eee'><em>
+<a href="https://github.com/seunghwanly/CODING-TEST/blob/main/%EB%91%90%EA%B0%9C%EB%BD%91%EC%95%84%EC%84%9C%EB%8D%94%ED%95%98%EA%B8%B0/solution.md">
+- 2021/01/02 완주하지못한선수</a></em></p>

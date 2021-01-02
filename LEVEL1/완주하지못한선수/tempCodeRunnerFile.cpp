@@ -1,0 +1,1 @@
+cout << answer << participant.size() << participant[1] << endl;
