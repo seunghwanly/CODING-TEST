@@ -1,0 +1,10 @@
+# SOLUTION
+
+    1. 먼저 입력받은 수의 만큼의 배열을 만들어 준다.
+    2. 1을 제외하고 2부터 2의 배수들에 0이나 다른 값들을 넣어준다. (제거를 해도 된다.)
+    3. 이렇게 진행이 될 경우, 모든 k에 대한 배수는 다른 값으로 초기화되거나 삭제된다.
+    4. 만들어둔 배열안에 남아있는 값으로 확인할 수 있다. 
+
+## 시간 복잡도
+
+> <img src="https://latex.codecogs.com/gif.latex?O(n^2)"/> → <img src="https://latex.codecogs.com/gif.latex?O(n * (n/k))"/>
