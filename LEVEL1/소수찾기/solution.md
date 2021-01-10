@@ -7,4 +7,4 @@
 
 ## 시간 복잡도
 
-> <img src="https://latex.codecogs.com/gif.latex?O(n^2)"/> → <img src="https://latex.codecogs.com/gif.latex?O(n * (n/k))"/>
+> O(n^2) → O(n * (n/k))
