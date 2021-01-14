@@ -79,3 +79,20 @@ using namespace std;
 <p align='end' style='color:#eee'><em>
 <a href="https://github.com/seunghwanly/CODING-TEST/blob/main/LEVEL1/%EC%99%84%EC%A3%BC%ED%95%98%EC%A7%80%EB%AA%BB%ED%95%9C%EC%84%A0%EC%88%98/solution.md">
 - 2021/01/02 완주하지못한선수</a></em></p>
+
+### javaScript : shift( )
+* 배열에서 첫 번째 요소를 제거하고, 제거된 요소를 반환 → pop()
+* 하나의 배열을 queue 처럼 사용할 수 있다는 장점
+shift( )를 사용하게 되면 아래와 같이 사용할 수 있다. 
+```js
+array : [ 0, 1, 2, 3 ]
+          ^
+         top
+```
+array.shift();
+```js
+array : [ 1, 2, 3 ]
+```
+<p align='end' style='color:#eee'><em>
+<a href="https://github.com/seunghwanly/CODING-TEST/blob/main/LEVEL2/%EB%8B%A4%EB%A6%AC%EB%A5%BC%EC%A7%80%EB%82%98%EB%8A%94%ED%8A%B8%EB%9F%AD/index.js">
+- 2021/01/02 완주하지못한선수</a></em></p>
