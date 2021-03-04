@@ -96,3 +96,30 @@ array : [ 1, 2, 3 ]
 <p align='end' style='color:#eee'><em>
 <a href="https://github.com/seunghwanly/CODING-TEST/blob/main/LEVEL2/%EB%8B%A4%EB%A6%AC%EB%A5%BC%EC%A7%80%EB%82%98%EB%8A%94%ED%8A%B8%EB%9F%AD/index.js">
 - 2021/01/02 완주하지못한선수</a></em></p>
+
+### 최대공약수
+* 재귀함수를 이용한 함수 생성
+```js
+    const getGCD = (a, b) => {
+        if(b === 0) return a;
+        else return getGCD(b, a%b);
+    }   
+```
+b를 가지고 a를 나눈 나머지를 계속 구하게된다. 이때 b가 0이 되게되면 그전의 b가 최대공약수가 되기 때문에 a를 return
+> 최소공배수는 두 수의 곱을 최대공약수로 나눈 값
+- 2021/03/04 최대공약수와최소공배수
+
+### reduce( )
+reduce()는 빈 요소를 제외하고 배열 내에 존재하는 각 요소에 대해 callback 함수를 한 번씩 실행하는데, 콜백 함수는 다음의 네 인수를 받습니다:
+
+* accumulator
+* currentValue
+* currentIndex
+* array
+
+예를 들어서
+```js
+array.reduce((a,b)=> a+b);
+```
+위와 같이 코드를 작성하게되면 모든 배열의 원소를 더한 값이 반환된다. 유용하게 쓰일 함수로 보인다. 
+- 2021/03/04 평균구하기
