@@ -1,6 +1,4 @@
 function solution(n, arr1, arr2) {
-    var answer = [];
-
     // 0 * 0 = 0 | 1 * 0 = 1 | 0 * 1 = 1 | 1 * 1 = 1
     let map = [];
     // hint
