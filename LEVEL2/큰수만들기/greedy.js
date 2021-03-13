@@ -33,6 +33,7 @@ function greedy(arr, size) {
              *      00000000000000000000000000000010    : 2 -> push(9)
              */
             if ((i & (1 << len)) !== 0) {
+                console.log(`i : ${i}`,'temp > ', arr[len]);
                 temp.push(arr[len]);
             }
         } while (len--);
