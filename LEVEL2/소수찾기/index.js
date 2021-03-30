@@ -1,34 +1,7 @@
-function solution(numbers) {
-    let elements = numbers.split('');
-
-    let primeNumbers = [];
-
-    const makeCombinations = (arr, str) => {
-        if(arr.length > 0) {
-            for(let i=0; i<arr.length; ++i) {
-                const temp = [...arr];
-                temp.splice(i, 1);
-                makeCombinations(temp, str + arr[i]);
-            }
-        }
-        if(str.length > 0) {
-            if(isPrime(+str)) {
-                primeNumbers.push(+str);
-            }
-        }
-    };
-
-    makeCombinations(elements, "");
-
-    return primeNumbers.length;
-}
-
-console.log(solution("17"));
-
 // 소수 판별기
 function isPrime(n) {
     if (n <= 1) {   // 1
-        return false;  
+        return false;
     }
     if (n === 2 || n === 3) {   // 2 or 3
         return true;
@@ -46,3 +19,32 @@ function isPrime(n) {
     }
     return true;
 }
+
+function solution(numbers) {
+    let elements = numbers.split('');
+
+    let primeNumbers = [];
+
+    const makeCombinations = (arr, str) => {
+        console.log(arr, str, primeNumbers);
+        if (arr.length > 0) {
+            for (let i = 0; i < arr.length; ++i) {
+                const temp = [...arr];
+                temp.splice(i, 1);
+                makeCombinations(temp, str + arr[i]);
+                console.log(arr, str, primeNumbers, i);
+            }
+        }
+        if (str.length > 0) {
+            if (isPrime(+str) && !primeNumbers.includes(+str)) {
+                primeNumbers.push(+str);
+                console.log(arr, str, primeNumbers);
+            }
+        }
+    };
+
+    makeCombinations(elements, "");
+    return primeNumbers.length;
+}
+
+console.log(solution("17"));
