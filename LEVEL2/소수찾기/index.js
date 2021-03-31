@@ -22,23 +22,23 @@ function isPrime(n) {
 
 function solution(numbers) {
     let elements = numbers.split('');
-
+    console.log(elements);
     let primeNumbers = [];
 
     const makeCombinations = (arr, str) => {
-        console.log(arr, str, primeNumbers);
+        // console.log(arr, str, primeNumbers);
         if (arr.length > 0) {
             for (let i = 0; i < arr.length; ++i) {
                 const temp = [...arr];
                 temp.splice(i, 1);
                 makeCombinations(temp, str + arr[i]);
-                console.log(arr, str, primeNumbers, i);
+                // console.log(arr, str, primeNumbers, i);
             }
         }
         if (str.length > 0) {
             if (isPrime(+str) && !primeNumbers.includes(+str)) {
                 primeNumbers.push(+str);
-                console.log(arr, str, primeNumbers);
+                // console.log(arr, str, primeNumbers);
             }
         }
     };
