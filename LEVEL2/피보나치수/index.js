@@ -28,7 +28,7 @@ const bottomupFibonacci = (n) => {
     bottomupList[0] = 0;
     bottomupList[1] = 1;
     // for loop to n
-    for (let i = 2; i <= n + 1; ++i) {
+    for (let i = 2; i <= n; ++i) {
         bottomupList[i] = bottomupList[i - 1] % 1234567 + bottomupList[i - 2] % 1234567;
     }
     return bottomupList[n];
