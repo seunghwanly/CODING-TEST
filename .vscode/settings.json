@@ -1,5 +1,11 @@
 {
     "files.associations": {
-        "vector": "cpp"
-    }
+        "vector": "cpp",
+        "string": "cpp",
+        "iostream": "cpp",
+        "stack": "cpp",
+        "queue": "cpp",
+        "algorithm": "cpp"
+    },
+    "C_Cpp.intelliSenseEngineFallback": "Enabled"
 }
