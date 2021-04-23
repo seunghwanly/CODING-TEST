@@ -5,7 +5,9 @@
         "iostream": "cpp",
         "stack": "cpp",
         "queue": "cpp",
-        "algorithm": "cpp"
+        "algorithm": "cpp",
+        "__bit_reference": "cpp",
+        "ostream": "cpp"
     },
     "C_Cpp.intelliSenseEngineFallback": "Enabled"
 }
