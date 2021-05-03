@@ -9,5 +9,6 @@
         "__bit_reference": "cpp",
         "ostream": "cpp"
     },
-    "C_Cpp.intelliSenseEngineFallback": "Enabled"
+    "C_Cpp.intelliSenseEngineFallback": "Enabled",
+    "python.formatting.provider": "yapf"
 }
