@@ -1,0 +1,1 @@
+ and visited[nextY][nextX] == False
