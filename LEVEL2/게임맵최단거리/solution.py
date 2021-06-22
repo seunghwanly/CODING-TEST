@@ -17,14 +17,13 @@ def isSurrounded(N, M, maps):
 
 
 def solution(maps):
-    answer = 0
     N, M = len(maps), len(maps[0])
     visited = [[False for _ in range(M)] for _ in range(N)]
 
     # direction
     dy = [0, 0, 1, -1]
     dx = [1, -1, 0, 0]
-    print(N, M)
+    
     if isSurrounded(N - 1, M - 1, maps): return -1
     # init
     que = []
@@ -34,10 +33,9 @@ def solution(maps):
 
     while que:
         front = que.pop(0)
-
+        
         if front[0] == (N - 1) and front[1] == (M - 1):
-            answer = front[2]
-            break
+            return front[2]
 
         for i in range(4):
             nextY = front[0] + dy[i]
@@ -46,7 +44,7 @@ def solution(maps):
                 que.append((nextY, nextX, front[2] + 1))
                 visited[nextY][nextX] = True
 
-    return answer
+    return -1
 
 
 print(
